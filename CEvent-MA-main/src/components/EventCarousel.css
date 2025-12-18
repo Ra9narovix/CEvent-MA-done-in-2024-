@@ -1,0 +1,71 @@
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  
+}
+.carousel-slide {
+  padding: 0 10px; /* Adds space between slides */
+  box-sizing: border-box;
+}
+
+
+.carousel-image {
+  width: 100%;
+  height: 400px;
+  object-fit:contain;
+  border-radius: 12px;
+}
+
+.carousel-caption {
+  text-align: center;
+  margin-top: 10px;
+  color: #444;
+}
+
+.carousel-caption h3 {
+  margin-bottom: 5px;
+  font-size: 24px;
+  color: #333;
+}
+
+.carousel-card {
+  min-width: 250px;
+  max-width: 300px;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+@media (max-width: 600px) {
+  .carousel-container {
+    width: 100%;
+    padding: 1rem 0;
+    background: none; /* removes background if there's one via inheritance */
+  }
+
+  .carousel-image {
+    height: 200px; /* reduce image height for small screens */
+  }
+
+  .carousel-card {
+    margin: 0 0.5rem;
+    box-shadow: none; /* optional: remove shadow for cleaner mobile view */
+    background: transparent; /* removes card background */
+  }
+
+  .carousel-caption h3 {
+    font-size: 18px;
+  }
+}
+
